@@ -4,12 +4,7 @@ const CounterContext = createContext();
 
 export const CounterProvider = ({ children }) => {
 
-  const [counters, setCounters] = useState([
-    { id: 1, name: 'contador 1', value: 1 },
-    { id: 2, name: 'contador 2', value: 2 },
-    { id: 3, name: 'contador 3', value: 3 },
-    { id: 4, name: 'contador 4', value: 4 }
-  ]);
+  const [counters, setCounters] = useState([]);
 
   const [selectedCounter, setSelectedCounter] = useState(null);
 
